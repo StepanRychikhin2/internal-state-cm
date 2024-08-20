@@ -12,7 +12,7 @@ export default function Stiker(imgUrl, imgalt, imgId) {
 	return (
 		<li
 			onClick={(e) =>
-				(document.getElementById(`${imgId}`).textContent = Choise(imgalt))
+				(document.getElementById(`txt`).textContent = Choise(imgalt))
 			}
 			key={imgId}
 		>
