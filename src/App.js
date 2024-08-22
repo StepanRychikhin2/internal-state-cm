@@ -10,6 +10,12 @@ gap:60px;
 justify-content: center;
 `
 const Text = styled.p`
+display: flex;
+margin-left: auto;
+margin-right: auto;
+justify-content: center;
+align-items: center;
+font-size: 40px
 
 `
 function App() {
@@ -18,7 +24,7 @@ function App() {
 			<ListStikers>
 				<List></List>
 			</ListStikers>
-      <Text id="txt">srvrbretb</Text>
+      <Text> Pigs: <span id="txt">...</span></Text>
 		</>
 	)
 }

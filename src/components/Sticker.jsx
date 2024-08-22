@@ -8,9 +8,15 @@ const TextPigsTag = styled.p`
   font-size: 25px;
   font-style: italic;
 `
+const Comp = styled.li`
+background-color: #61dafb;
+
+border-radius: 20px;
+
+`
 export default function Stiker(imgUrl, imgalt, imgId) {
 	return (
-		<li
+		<Comp
 			onClick={(e) =>
 				(document.getElementById(`txt`).textContent = Choise(imgalt))
 			}
@@ -18,7 +24,7 @@ export default function Stiker(imgUrl, imgalt, imgId) {
 		>
 			<PhoroPigs src={imgUrl} alt={imgalt} />
 			<TextPigsTag  id={imgId}></TextPigsTag>
-		</li>
+		</Comp>
 	)
 }
 
